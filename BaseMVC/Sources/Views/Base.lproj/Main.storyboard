@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JX9-Zs-CT6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="Z72-8Z-U5v">
+            <objects>
+                <viewController storyboardIdentifier="StartViewController" automaticallyAdjustsScrollViewInsets="NO" id="JX9-Zs-CT6" customClass="StartViewController" customModule="BaseMVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sx0-PZ-Fi1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mck-qJ-srv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yjs-9G-82P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="m5m-qT-L4W">
+                                <rect key="frame" x="177" y="354" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jy-Ss-yj0">
+                                <rect key="frame" x="150.5" y="323.5" width="75" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8jy-Ss-yj0" firstAttribute="centerY" secondItem="yjs-9G-82P" secondAttribute="centerY" id="bht-Vg-OlZ"/>
+                            <constraint firstItem="m5m-qT-L4W" firstAttribute="top" secondItem="8jy-Ss-yj0" secondAttribute="bottom" constant="10" id="rOc-cQ-4rg"/>
+                            <constraint firstItem="m5m-qT-L4W" firstAttribute="centerX" secondItem="yjs-9G-82P" secondAttribute="centerX" id="sSA-JS-QcZ"/>
+                            <constraint firstItem="8jy-Ss-yj0" firstAttribute="centerX" secondItem="yjs-9G-82P" secondAttribute="centerX" id="xwB-Xp-uBq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hge-Ba-iRD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RMf-IH-cNr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3616.8000000000002" y="941.37931034482767"/>
+        </scene>
+    </scenes>
+</document>

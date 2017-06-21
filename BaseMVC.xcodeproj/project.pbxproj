@@ -61,16 +61,16 @@
 		8234BE391EF9887D009A5DE5 /* LocalizableString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableString.swift; sourceTree = "<group>"; };
 		8234BE3A1EF9887D009A5DE5 /* StructDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructDefine.swift; sourceTree = "<group>"; };
 		8234BE3B1EF9887D009A5DE5 /* ViewDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDefine.swift; sourceTree = "<group>"; };
-		8234BE3E1EF9887D009A5DE5 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
-		8234BE3F1EF9887D009A5DE5 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		8234BE3E1EF9887D009A5DE5 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = ../Manager/Animator.swift; sourceTree = "<group>"; };
+		8234BE3F1EF9887D009A5DE5 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmManager.swift; path = ../Manager/RealmManager.swift; sourceTree = "<group>"; };
 		8234BE421EF9887D009A5DE5 /* RStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RStore.swift; sourceTree = "<group>"; };
 		8234BE431EF9887D009A5DE5 /* RUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RUser.swift; sourceTree = "<group>"; };
 		8234BE451EF9887D009A5DE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8234BE471EF9887D009A5DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8234BE481EF9887D009A5DE5 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		8234BE4A1EF9887D009A5DE5 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
-		8234BE4B1EF9887D009A5DE5 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		8234BE4C1EF9887D009A5DE5 /* OAuthHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthHandler.swift; sourceTree = "<group>"; };
+		8234BE4A1EF9887D009A5DE5 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiClient.swift; path = Services/ApiClient.swift; sourceTree = "<group>"; };
+		8234BE4B1EF9887D009A5DE5 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppRouter.swift; path = Services/AppRouter.swift; sourceTree = "<group>"; };
+		8234BE4C1EF9887D009A5DE5 /* OAuthHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OAuthHandler.swift; path = Services/OAuthHandler.swift; sourceTree = "<group>"; };
 		8234BE511EF9887D009A5DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8234BE551EF9887D009A5DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +94,34 @@
 				21D61AFBDF31D90808DB8DB3 /* Pods-BaseMVC.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7FE432AF1EFA49F900CDFBDD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8234BE2C1EF9887D009A5DE5 /* Extensions */,
+				8234BE331EF9887D009A5DE5 /* Helpers */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		7FE432B01EFA4A0D00CDFBDD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8234BE4A1EF9887D009A5DE5 /* ApiClient.swift */,
+				8234BE4B1EF9887D009A5DE5 /* AppRouter.swift */,
+				8234BE4C1EF9887D009A5DE5 /* OAuthHandler.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		7FE432B11EFA4A8200CDFBDD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8234BE501EF9887D009A5DE5 /* LaunchScreen.storyboard */,
+				8234BE541EF9887D009A5DE5 /* Main.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 		8234BE041EF987C4009A5DE5 = {
@@ -127,15 +155,15 @@
 			isa = PBXGroup;
 			children = (
 				8234BE231EF9887D009A5DE5 /* AppDelegate.swift */,
-				8234BE441EF9887D009A5DE5 /* Resources */,
-				8234BE331EF9887D009A5DE5 /* Helpers */,
-				8234BE2C1EF9887D009A5DE5 /* Extensions */,
-				8234BE3C1EF9887D009A5DE5 /* Libraries */,
-				8234BE3D1EF9887D009A5DE5 /* Manager */,
-				8234BE401EF9887D009A5DE5 /* Models */,
+				7FE432AF1EFA49F900CDFBDD /* Common */,
 				8234BE491EF9887D009A5DE5 /* Services */,
-				8234BE4D1EF9887D009A5DE5 /* Views */,
+				7FE432B01EFA4A0D00CDFBDD /* Networking */,
+				8234BE401EF9887D009A5DE5 /* Models */,
 				8234BE241EF9887D009A5DE5 /* Controllers */,
+				8234BE4D1EF9887D009A5DE5 /* Views */,
+				7FE432B11EFA4A8200CDFBDD /* Storyboards */,
+				8234BE3C1EF9887D009A5DE5 /* Libraries */,
+				8234BE441EF9887D009A5DE5 /* Resources */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -183,15 +211,6 @@
 			path = Libraries;
 			sourceTree = "<group>";
 		};
-		8234BE3D1EF9887D009A5DE5 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				8234BE3E1EF9887D009A5DE5 /* Animator.swift */,
-				8234BE3F1EF9887D009A5DE5 /* RealmManager.swift */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
 		8234BE401EF9887D009A5DE5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,9 +233,8 @@
 		8234BE491EF9887D009A5DE5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				8234BE4A1EF9887D009A5DE5 /* ApiClient.swift */,
-				8234BE4B1EF9887D009A5DE5 /* AppRouter.swift */,
-				8234BE4C1EF9887D009A5DE5 /* OAuthHandler.swift */,
+				8234BE3E1EF9887D009A5DE5 /* Animator.swift */,
+				8234BE3F1EF9887D009A5DE5 /* RealmManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -224,8 +242,6 @@
 		8234BE4D1EF9887D009A5DE5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8234BE501EF9887D009A5DE5 /* LaunchScreen.storyboard */,
-				8234BE541EF9887D009A5DE5 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -430,6 +446,7 @@
 				8234BE511EF9887D009A5DE5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8234BE541EF9887D009A5DE5 /* Main.storyboard */ = {
@@ -438,6 +455,7 @@
 				8234BE551EF9887D009A5DE5 /* Base */,
 			);
 			name = Main.storyboard;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

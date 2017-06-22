@@ -47,9 +47,29 @@ class StartViewController: BaseViewController {
 
     // MARK: - Functions
     private func checkApp() {
+
+        // User module (login, register, ...)
+        self.perform(#selector(StartViewController.gotoUser), with: nil, afterDelay: 1)
+
+        // Main app
+        // self.perform(#selector(StartViewController.gotoMainApp), with: nil, afterDelay: 1)
+    }
+
+    func gotoUser() {
+        let userSettingVC = LoginViewController.getViewControllerFromStoryboard(Storyboard.User.name)
+        let navigationVC = UINavigationController(rootViewController: userSettingVC)
+
+        // create animator for present
+        //        let animator = Animator(presentedType: .push, dismissedType: .push)
+        //        self.menuViewController?.animator = animator
+        //
+        //        navigationVC.transitioningDelegate = self.menuViewController
+
+        // present
+        self.present(navigationVC, animated: true, completion: nil)
     }
 
     func gotoMainApp() {
-
+        self.mainTabBarViewController?.setupMainApp()
     }
 }

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bJ5-ce-Frp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hiD-jE-fEb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bJ5-ce-Frp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="3au-Ip-Amx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="324-sm-Q5w" kind="relationship" relationship="rootViewController" id="ZNH-Hx-6jz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KKt-0K-jAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-279" y="133"/>
+        </scene>
+        <!--ChatRoom-->
+        <scene sceneID="JI2-Hl-05U">
+            <objects>
+                <viewController id="324-sm-Q5w" customClass="BaseViewController" customModule="BaseMVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1lX-yU-E8H"/>
+                        <viewControllerLayoutGuide type="bottom" id="9gq-hr-UlP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mrM-mJ-xlU">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSC-BC-rR7">
+                                <rect key="frame" x="171" y="286.5" width="33" height="30"/>
+                                <state key="normal" title="Chat"/>
+                                <connections>
+                                    <segue destination="nWm-6L-pqe" kind="show" id="OF2-LQ-Nbf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sSC-BC-rR7" firstAttribute="centerX" secondItem="mrM-mJ-xlU" secondAttribute="centerX" id="UHv-OC-hw1"/>
+                            <constraint firstItem="sSC-BC-rR7" firstAttribute="centerY" secondItem="mrM-mJ-xlU" secondAttribute="centerY" id="exj-oe-eKX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ChatRoom" id="cA9-mE-rGx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBM-Qv-ASg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="133"/>
+        </scene>
+        <!--Message-->
+        <scene sceneID="1nv-Uw-OQ7">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="nWm-6L-pqe" customClass="BaseViewController" customModule="BaseMVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ulm-Fl-2NM"/>
+                        <viewControllerLayoutGuide type="bottom" id="gcg-RI-Agg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xnE-Ta-Nuv">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ccm-RY-eYt">
+                                <rect key="frame" x="165.5" y="286.5" width="44" height="30"/>
+                                <state key="normal" title="Profile"/>
+                                <connections>
+                                    <segue destination="MUM-X0-BwH" kind="show" id="2P0-kT-lCd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ccm-RY-eYt" firstAttribute="centerY" secondItem="xnE-Ta-Nuv" secondAttribute="centerY" id="7NS-iO-9p7"/>
+                            <constraint firstItem="Ccm-RY-eYt" firstAttribute="centerX" secondItem="xnE-Ta-Nuv" secondAttribute="centerX" id="WtL-BP-yQi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Message" id="6gI-Lo-i6I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xa-G4-hTw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1338" y="133"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="ohL-Yz-jcW">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="MUM-X0-BwH" customClass="BaseViewController" customModule="BaseMVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dMN-Uk-Px1"/>
+                        <viewControllerLayoutGuide type="bottom" id="HN7-jE-ADx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yWm-TW-KiX">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="JdV-6v-OGD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISU-Aa-hYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2124" y="133"/>
+        </scene>
+    </scenes>
+</document>

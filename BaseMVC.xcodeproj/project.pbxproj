@@ -25,7 +25,7 @@
 		8234BE781EF9887D009A5DE5 /* LocalizableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234BE391EF9887D009A5DE5 /* LocalizableString.swift */; };
 		8234BE791EF9887D009A5DE5 /* StructDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234BE3A1EF9887D009A5DE5 /* StructDefine.swift */; };
 		8234BE7A1EF9887D009A5DE5 /* ViewDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234BE3B1EF9887D009A5DE5 /* ViewDefine.swift */; };
-		8234BE7B1EF9887D009A5DE5 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234BE3E1EF9887D009A5DE5 /* Animator.swift */; };
+		8234BE7B1EF9887D009A5DE5 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234BE3E1EF9887D009A5DE5 /* TransitionManager.swift */; };
 		8234BE7C1EF9887D009A5DE5 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234BE3F1EF9887D009A5DE5 /* RealmManager.swift */; };
 		8234BE7E1EF9887D009A5DE5 /* RStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234BE421EF9887D009A5DE5 /* RStore.swift */; };
 		8234BE7F1EF9887D009A5DE5 /* RUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234BE431EF9887D009A5DE5 /* RUser.swift */; };
@@ -36,6 +36,12 @@
 		8234BE841EF9887D009A5DE5 /* OAuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234BE4C1EF9887D009A5DE5 /* OAuthHandler.swift */; };
 		8234BE861EF9887D009A5DE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8234BE501EF9887D009A5DE5 /* LaunchScreen.storyboard */; };
 		8234BE881EF9887D009A5DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8234BE541EF9887D009A5DE5 /* Main.storyboard */; };
+		825778691EFAC78C0057DACB /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825778681EFAC78C0057DACB /* MainTabBarController.swift */; };
+		8257786B1EFACA470057DACB /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8257786A1EFACA470057DACB /* User.storyboard */; };
+		8257786D1EFACAA60057DACB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8257786C1EFACAA60057DACB /* LoginViewController.swift */; };
+		825778701EFACC5C0057DACB /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8257786F1EFACC5C0057DACB /* Timeline.storyboard */; };
+		825778721EFACC760057DACB /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825778711EFACC760057DACB /* Message.storyboard */; };
+		825778741EFACF670057DACB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825778731EFACF670057DACB /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +67,7 @@
 		8234BE391EF9887D009A5DE5 /* LocalizableString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableString.swift; sourceTree = "<group>"; };
 		8234BE3A1EF9887D009A5DE5 /* StructDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructDefine.swift; sourceTree = "<group>"; };
 		8234BE3B1EF9887D009A5DE5 /* ViewDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDefine.swift; sourceTree = "<group>"; };
-		8234BE3E1EF9887D009A5DE5 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		8234BE3E1EF9887D009A5DE5 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		8234BE3F1EF9887D009A5DE5 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		8234BE421EF9887D009A5DE5 /* RStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RStore.swift; sourceTree = "<group>"; };
 		8234BE431EF9887D009A5DE5 /* RUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RUser.swift; sourceTree = "<group>"; };
@@ -73,6 +79,12 @@
 		8234BE4C1EF9887D009A5DE5 /* OAuthHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthHandler.swift; sourceTree = "<group>"; };
 		8234BE511EF9887D009A5DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8234BE551EF9887D009A5DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		825778681EFAC78C0057DACB /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		8257786A1EFACA470057DACB /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		8257786C1EFACAA60057DACB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8257786F1EFACC5C0057DACB /* Timeline.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
+		825778711EFACC760057DACB /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		825778731EFACF670057DACB /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				82F485B01EF98C81008D82A9 /* Main */,
+				8257786E1EFACAAC0057DACB /* User */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -186,8 +199,9 @@
 		8234BE3D1EF9887D009A5DE5 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				8234BE3E1EF9887D009A5DE5 /* Animator.swift */,
+				8234BE3E1EF9887D009A5DE5 /* TransitionManager.swift */,
 				8234BE3F1EF9887D009A5DE5 /* RealmManager.swift */,
+				825778731EFACF670057DACB /* LocationManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -224,16 +238,36 @@
 		8234BE4D1EF9887D009A5DE5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8234BE501EF9887D009A5DE5 /* LaunchScreen.storyboard */,
-				8234BE541EF9887D009A5DE5 /* Main.storyboard */,
+				825778671EFAC75D0057DACB /* Storyboards */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		825778671EFAC75D0057DACB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8234BE501EF9887D009A5DE5 /* LaunchScreen.storyboard */,
+				8234BE541EF9887D009A5DE5 /* Main.storyboard */,
+				8257786A1EFACA470057DACB /* User.storyboard */,
+				8257786F1EFACC5C0057DACB /* Timeline.storyboard */,
+				825778711EFACC760057DACB /* Message.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		8257786E1EFACAAC0057DACB /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8257786C1EFACAA60057DACB /* LoginViewController.swift */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 		82F485B01EF98C81008D82A9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				8234BE251EF9887D009A5DE5 /* BaseViewController.swift */,
+				825778681EFAC78C0057DACB /* MainTabBarController.swift */,
 				8234BE2A1EF9887D009A5DE5 /* StartViewController.swift */,
 			);
 			name = Main;
@@ -311,9 +345,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8234BE801EF9887D009A5DE5 /* Assets.xcassets in Resources */,
+				825778701EFACC5C0057DACB /* Timeline.storyboard in Resources */,
+				8257786B1EFACA470057DACB /* User.storyboard in Resources */,
 				8234BE861EF9887D009A5DE5 /* LaunchScreen.storyboard in Resources */,
 				8234BE881EF9887D009A5DE5 /* Main.storyboard in Resources */,
 				8234BE811EF9887D009A5DE5 /* Localizable.strings in Resources */,
+				825778721EFACC760057DACB /* Message.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,13 +440,16 @@
 				8234BE661EF9887D009A5DE5 /* BaseViewController.swift in Sources */,
 				8234BE7E1EF9887D009A5DE5 /* RStore.swift in Sources */,
 				8234BE7C1EF9887D009A5DE5 /* RealmManager.swift in Sources */,
+				825778691EFAC78C0057DACB /* MainTabBarController.swift in Sources */,
 				8234BE711EF9887D009A5DE5 /* UIView+Ext.swift in Sources */,
 				8234BE701EF9887D009A5DE5 /* UITableView+Ext.swift in Sources */,
 				8234BE6E1EF9887D009A5DE5 /* Date+Ext.swift in Sources */,
 				8234BE6F1EF9887D009A5DE5 /* String+Ext.swift in Sources */,
-				8234BE7B1EF9887D009A5DE5 /* Animator.swift in Sources */,
+				8234BE7B1EF9887D009A5DE5 /* TransitionManager.swift in Sources */,
 				8234BE831EF9887D009A5DE5 /* AppRouter.swift in Sources */,
+				8257786D1EFACAA60057DACB /* LoginViewController.swift in Sources */,
 				8234BE7A1EF9887D009A5DE5 /* ViewDefine.swift in Sources */,
+				825778741EFACF670057DACB /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

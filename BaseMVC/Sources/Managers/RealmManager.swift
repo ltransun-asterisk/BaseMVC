@@ -7,7 +7,7 @@ struct RealmManager {
         logD("\(String(describing: fileURL))")
 
         // get schema version
-        let schemaVersion = UInt64(dataVersion)
+        let schemaVersion = UInt64(Config.dataVersion)
 
         // create config
         let config = Realm.Configuration(

@@ -29,6 +29,7 @@ class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning {
     }
 
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+
         switch animateType {
         case .rightToLeft:
             self.pushAnimation(transitionContext)

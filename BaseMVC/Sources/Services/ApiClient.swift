@@ -72,7 +72,7 @@ struct ApiClient {
         let sessionManager = SessionManager(configuration: configuration)
 
         // OAuthHandler
-        let oAuthHandler = OAuthHandler(baseUrl: baseUrl)
+        let oAuthHandler = OAuthHandler(baseUrl: Config.baseUrl)
         sessionManager.adapter = oAuthHandler
         sessionManager.retrier = oAuthHandler
 

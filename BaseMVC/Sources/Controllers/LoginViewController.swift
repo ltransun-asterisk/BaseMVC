@@ -17,6 +17,7 @@ class LoginViewController: BaseViewController {
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addBtnRightNavWithTitle(title: "Setting")
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -50,6 +51,20 @@ class LoginViewController: BaseViewController {
     @IBAction func actionTouchBtnLogin(_ sender: Any) {
         self.mainTabBarViewController?.setupMainApp()
         self.dismiss(animated: true, completion: nil)
+    }
+
+    override func actionTouchBtnRight() {
+        let userSettingVC = LoginViewController.getViewControllerFromStoryboard(Storyboard.User.name)
+        let navigationVC = UINavigationController(rootViewController: userSettingVC)
+
+        // create animator for present
+        //        let animator = Animator(presentedType: .push, dismissedType: .push)
+        //        self.menuViewController?.animator = animator
+        //
+        //        navigationVC.transitioningDelegate = self.menuViewController
+
+        // present
+        self.present(navigationVC, animated: true, completion: nil)
     }
 
     // MARK: - Functions

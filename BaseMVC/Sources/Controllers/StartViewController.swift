@@ -4,8 +4,6 @@ class StartViewController: BaseViewController {
 
     // MARK: - IBOutlet
 
-    @IBOutlet weak var tableView: UITableView!
-
     // MARK: - Varialbes
 
     // MARK: - View Lifecycle

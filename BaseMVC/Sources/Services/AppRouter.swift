@@ -18,7 +18,7 @@ enum AppRouter: URLRequestConvertible {
     }
     // MARK: URLRequestConvertible
     func asURLRequest() throws -> URLRequest {
-        let url = try baseUrl.asURL()
+        let url = try Config.baseUrl.asURL()
 
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))
         urlRequest.httpMethod = method.rawValue

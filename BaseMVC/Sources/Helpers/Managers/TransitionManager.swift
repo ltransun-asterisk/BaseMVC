@@ -1,18 +1,17 @@
 import UIKit
 
-public enum AnimationType {
-    case push
-    case pop
-    case present
-    case dismiss
+public enum TransitionStyle {
+    case leftToRight
+    case rightToLeft
+    case fade
     case none
 }
 
-class Animator: NSObject, UIViewControllerAnimatedTransitioning {
+class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning {
 
-    var presentedType: AnimationType = .push
-    var dismissedType: AnimationType = .pop
-    var animateType: AnimationType = .none
+    var presentedType: TransitionStyle = .rightToLeft
+    var dismissedType: TransitionStyle = .leftToRight
+    var animateType: TransitionStyle = .none
     var transitionDuration: TimeInterval = 0.33
 
     // MARK: Init
@@ -20,7 +19,7 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
 
     }
 
-    init(presentedType: AnimationType, dismissedType: AnimationType) {
+    init(presentedType: TransitionStyle, dismissedType: TransitionStyle) {
         self.presentedType = presentedType
         self.dismissedType = dismissedType
     }
@@ -30,10 +29,11 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
     }
 
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+
         switch animateType {
-        case .push:
+        case .rightToLeft:
             self.pushAnimation(transitionContext)
-        case .pop:
+        case .leftToRight:
             self.popAnimation(transitionContext)
         default:
             self.pushAnimation(transitionContext)

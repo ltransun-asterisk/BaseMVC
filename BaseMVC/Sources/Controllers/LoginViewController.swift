@@ -1,6 +1,14 @@
+//
+//  LoginViewController.swift
+//  BaseMVC
+//
+//  Created by Henry Tran on 6/21/17.
+//  Copyright © 2017 THL. All rights reserved.
+//
+
 import UIKit
 
-class StartViewController: BaseViewController {
+class LoginViewController: BaseViewController {
 
     // MARK: - IBOutlet
 
@@ -9,6 +17,7 @@ class StartViewController: BaseViewController {
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addBtnRightNavWithTitle(title: "Setting")
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -17,9 +26,6 @@ class StartViewController: BaseViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        // check app
-        self.checkApp()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -39,21 +45,15 @@ class StartViewController: BaseViewController {
 
     // MARK: - Setup View
 
-    // MARK: - Actions
-
     // MARK: - Call Api
 
-    // MARK: - Functions
-    private func checkApp() {
-
-        // User module (login, register, ...)
-        self.perform(#selector(StartViewController.gotoUser), with: nil, afterDelay: 1)
-
-        // Main app
-        // self.perform(#selector(StartViewController.gotoMainApp), with: nil, afterDelay: 1)
+    // MARK: - Actions
+    @IBAction func actionTouchBtnLogin(_ sender: Any) {
+        self.mainTabBarViewController?.setupMainApp()
+        self.dismiss(animated: true, completion: nil)
     }
 
-    func gotoUser() {
+    override func actionTouchBtnRight() {
         let userSettingVC = LoginViewController.getViewControllerFromStoryboard(Storyboard.User.name)
         let navigationVC = UINavigationController(rootViewController: userSettingVC)
 
@@ -67,7 +67,6 @@ class StartViewController: BaseViewController {
         self.present(navigationVC, animated: true, completion: nil)
     }
 
-    func gotoMainApp() {
-        self.mainTabBarViewController?.setupMainApp()
-    }
+    // MARK: - Functions
+
 }

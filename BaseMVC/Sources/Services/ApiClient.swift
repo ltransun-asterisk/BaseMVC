@@ -17,17 +17,22 @@ struct HeaderValue {
 enum RequestResult {
     case success
     case error
-    //    case timeOut
-    //    case notConnectedToInternet
     case cancelled
 }
 
 public enum HttpStatusCode: Int {
     case ok = 200
+    case created = 201
+    case accepted = 202
+    case noContent = 204
     case badRequest = 400
     case unauthorized = 401
+    case forbidden = 403
     case notFound = 404
+    case notAcceptable = 406
+    case requestTimeout = 408
     case conflict = 409
+    case internalServerError = 500
     case serviceUnavailable = 503
     case notConnectedToInternet = -1009
     case cancelled = -999
@@ -67,7 +72,7 @@ struct ApiClient {
         let sessionManager = SessionManager(configuration: configuration)
 
         // OAuthHandler
-        let oAuthHandler = OAuthHandler(baseUrl: baseUrl)
+        let oAuthHandler = OAuthHandler(baseUrl: Config.baseUrl)
         sessionManager.adapter = oAuthHandler
         sessionManager.retrier = oAuthHandler
 

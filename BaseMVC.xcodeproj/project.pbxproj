@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110118F31F0D3724005BFD64 /* ReusableNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110118F21F0D3724005BFD64 /* ReusableNibLoadable.swift */; };
+		110118F51F0D37AB005BFD64 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110118F41F0D37AB005BFD64 /* UICollectionView+Ext.swift */; };
 		6C7798886244F4E294474CFD /* Pods_BaseMVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581DCC4B99E729E5223C5E6F /* Pods_BaseMVC.framework */; };
 		8234BE651EF9887D009A5DE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234BE231EF9887D009A5DE5 /* AppDelegate.swift */; };
 		8234BE661EF9887D009A5DE5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234BE251EF9887D009A5DE5 /* BaseViewController.swift */; };
@@ -46,6 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		110118F21F0D3724005BFD64 /* ReusableNibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableNibLoadable.swift; sourceTree = "<group>"; };
+		110118F41F0D37AB005BFD64 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 		21D61AFBDF31D90808DB8DB3 /* Pods-BaseMVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseMVC.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseMVC/Pods-BaseMVC.release.xcconfig"; sourceTree = "<group>"; };
 		581DCC4B99E729E5223C5E6F /* Pods_BaseMVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseMVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E818EC5E2DBA2392086830C /* Pods-BaseMVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseMVC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseMVC/Pods-BaseMVC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -239,9 +243,11 @@
 		82A3D57E1F000AFE009BFB2E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				110118F21F0D3724005BFD64 /* ReusableNibLoadable.swift */,
 				82A3D57F1F000AFE009BFB2E /* Color+Ext.swift */,
 				82A3D5801F000AFE009BFB2E /* Date+Ext.swift */,
 				82A3D5811F000AFE009BFB2E /* String+Ext.swift */,
+				110118F41F0D37AB005BFD64 /* UICollectionView+Ext.swift */,
 				82A3D5821F000AFE009BFB2E /* UITableView+Ext.swift */,
 				82A3D5831F000AFE009BFB2E /* UIView+Ext.swift */,
 				82A3D5841F000AFE009BFB2E /* UIViewController+Ext.swift */,
@@ -446,6 +452,7 @@
 				82A3D5A41F000B42009BFB2E /* ViewDefine.swift in Sources */,
 				82A3D59F1F000B42009BFB2E /* EnumDefine.swift in Sources */,
 				82A3D59E1F000B42009BFB2E /* Constants.swift in Sources */,
+				110118F51F0D37AB005BFD64 /* UICollectionView+Ext.swift in Sources */,
 				82A3D5A31F000B42009BFB2E /* StructDefine.swift in Sources */,
 				8234BE6B1EF9887D009A5DE5 /* StartViewController.swift in Sources */,
 				8234BE7F1EF9887D009A5DE5 /* RUser.swift in Sources */,
@@ -462,6 +469,7 @@
 				82A3D58A1F000AFE009BFB2E /* Date+Ext.swift in Sources */,
 				8234BE841EF9887D009A5DE5 /* OAuthHandler.swift in Sources */,
 				8234BE661EF9887D009A5DE5 /* BaseViewController.swift in Sources */,
+				110118F31F0D3724005BFD64 /* ReusableNibLoadable.swift in Sources */,
 				8234BE7E1EF9887D009A5DE5 /* RStore.swift in Sources */,
 				825778691EFAC78C0057DACB /* MainTabBarController.swift in Sources */,
 				82A3D59D1F000B42009BFB2E /* Config.swift in Sources */,

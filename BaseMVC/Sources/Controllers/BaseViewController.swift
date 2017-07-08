@@ -107,6 +107,26 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
         return navButton
     }
 
+    // set navigationbar appearance
+    func setNavigationBarBarTintColor(color: UIColor) {
+        let navigationBarAppearance = self.navigationController?.navigationBar
+        navigationBarAppearance?.barTintColor = color
+    }
+
+    func setNavigationBarTintColor(color: UIColor) {
+        let navigationBarAppearance = self.navigationController?.navigationBar
+        navigationBarAppearance?.tintColor = color
+    }
+
+    func setNavigationBarBackgroundImage(image: UIImage) {
+        let navigationBarAppearance = self.navigationController?.navigationBar
+        navigationBarAppearance?.setBackgroundImage(image, for: .default)
+    }
+
+    func setNavigationBarTitleTextAttributes(attributes: [String: Any]) {
+        let navigationBarAppearance = self.navigationController?.navigationBar
+        navigationBarAppearance?.titleTextAttributes = attributes
+    }
     // MARK: - Actions
     func actionTouchBtnBack() {
         _ = self.navigationController?.popViewController(animated: true)
